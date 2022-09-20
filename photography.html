@@ -11,28 +11,44 @@
 </head>
 
 <body>
-    <section>
-        <div class="header">
-            <a href="/index.html"><img src="WebImg/logo-regular.png"></a>
+     <section>
+      <div class="header">
+        <div>
+          <a href="/index.html"><img src="WebImg/logo-regular.png" /></a>
         </div>
-        <div class="nav-bar">
-            <div>
-                <a href="design.html">Design</a>
-                <a href="flim.html">Flim</a>
-                <a href="advertising.html">Advertising</a>
-                <a href="photography.html" style="color:  #5390D9;">Photography</a>
-                <a href="digital.html">Digital</a>
-                <a href="design.html">Podcasts</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-
-            <div class="navsearch">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button>SUBSCRIBE</button>
-            </div>
-
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <a href="design.html">Design</a>
+            <a href="flim.html" style="color: #5390d9">Flim</a>
+            <a href="advertising.html">Advertising</a>
+            <a href="photography.html">Photography</a>
+            <a href="digital.html">Digital</a>
+            <a href="design.html">Podcasts</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </ul>
         </div>
+      </div>
+      <div class="nav-bar">
+        <div>
+          <a href="design.html">Design</a>
+          <a href="flim.html" style="color: #5390d9">Flim</a>
+          <a href="advertising.html">Advertising</a>
+          <a href="photography.html">Photography</a>
+          <a href="digital.html">Digital</a>
+          <a href="design.html">Podcasts</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="navsearch">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
     </section>
 
 
@@ -101,7 +117,7 @@
             <a style="font-size: small;">Copyright © 2022 Creative Blog | Powered by Creative Blog</a>
         </div>
     </section>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
