@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
 }
 
 
@@ -77,6 +79,12 @@
 
 .main-h3{
     font-size: 1rem;
+}
+
+.main-h2{
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
 }
 
 .main-h1{
@@ -153,10 +161,12 @@
 }
 
 .pop-main{
-  height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
 }
 
 
@@ -166,8 +176,20 @@
   border-radius: 10px;
   height: 350px;
   width: 300px;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  
 }
 
+.bg-color{
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
 .podcast-head{
   display: flex;
   justify-content: center;
@@ -187,6 +209,67 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   
+}
+
+.prod-grid-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 10%;
+  grid-gap: 2%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prod-grid{
+
+  padding: 20px 0px;
+  padding-left: 10px;
+}
+.prod-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-grid-main h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: #5390D9;
+}
+
+.prod-grid-main h5{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.prod-grid-main p{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.prod-main h2{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 40px 0px;
+}
+
+.prod-img{
+  width: 300px;
+}
+
+.play-icon{
+  display: flex;
+  background-color: #5390D9;
+  color: white;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -534,6 +617,69 @@ CONTACT PAGE CSS STARTS HERE
   color: black;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .pop-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+}
+.prod-grid-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 10%;
+  grid-gap: 2%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prod-grid{
+
+  padding: 20px 0px;
+  padding-left: 10px;
+}
+.prod-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-grid-main h4{
+  font-size: 16px;
+  font-weight: 700;
+  color: #5390D9;
+}
+
+
+
+.prod-grid-main p{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+
+.play-icon{
+  display: flex;
+  background-color: #5390D9;
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod-img{
+  width: 250px;
+}
+
+}
 
 
 @media screen and (max-width: 1080px) {
@@ -558,6 +704,10 @@ CONTACT PAGE CSS STARTS HERE
 
 
 @media screen and (max-width: 900px) {
+
+  .shortadd{
+    display: none;
+  }
   
     .heroimg{
       height: 400px;
@@ -591,6 +741,68 @@ CONTACT PAGE CSS STARTS HERE
  
  
 }
+
+.prod-grid-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10%;
+  grid-gap: 2%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prod-grid{
+
+  padding: 20px 0px;
+  padding-left: 10px;
+}
+.prod-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-grid-main h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: #5390D9;
+}
+
+.prod-grid-main h5{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.prod-grid-main p{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.prod-main h2{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 40px 0px;
+}
+
+.prod-img{
+  width: 300px;
+}
+
+.play-icon{
+  display: flex;
+  background-color: #5390D9;
+  color: white;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 .podcast-section{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -696,6 +908,32 @@ CONTACT PAGE CSS STARTS HERE
 
 
   @media screen and (max-width: 700px) {
+
+  .pop-main{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+}
+.prod-img{
+  display: none;
+}
+
+.prod-grid-main{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 10%;
+  grid-gap: 2%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pop-center{
+  display: flex;
+  justify-content: center;
+}
 
     .main-head{
         display: grid;
@@ -819,8 +1057,17 @@ CONTACT PAGE CSS STARTS HERE
       
   }
 
+  #mar-400{
+    margin-top: 50px;
+  }
+
+  .for-input{
+    display: flex;
+    flex-flow: column;
+  }
+
   .for-input button{
-    padding: 12px 15px;
+    margin-top: 5px;
   }
 
   .abt-design img{
